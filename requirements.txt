@@ -1,0 +1,27 @@
+# ── Core TTS engine ──────────────────────────────────────────────────────────
+coqui-ai-tts>=0.24.0
+
+# ── Audio I/O & processing ───────────────────────────────────────────────────
+soundfile>=0.12.1
+scipy>=1.11.0
+librosa>=0.10.1
+numpy>=1.24.0
+
+# ── Noise reduction (optional but recommended for best cloning quality) ──────
+# pip install noisereduce
+noisereduce>=3.0.0
+
+# ── MP3 export (optional — requires ffmpeg installed on the system) ──────────
+# pip install pydub
+pydub>=0.25.1
+
+# ── Web UI ───────────────────────────────────────────────────────────────────
+gradio>=4.0.0
+
+# ── Deep learning ────────────────────────────────────────────────────────────
+# PyTorch installs as a coqui-ai-tts dependency, but explicit version pins help.
+# For GPU (CUDA 11.8):
+#   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu118
+# For CPU only (default):
+torch>=2.0.0
+torchaudio>=2.0.0
